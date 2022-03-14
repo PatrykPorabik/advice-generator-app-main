@@ -21,7 +21,8 @@ body {
 
 .card {
   background-color: #323a49;
-  margin: 20vh 5vw;
+  margin: 20vh auto;
+  width: 90vw;
   height: 40vh;
   border-radius: 5%;
   display: -webkit-box;
@@ -31,6 +32,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .card-title {
@@ -42,7 +47,7 @@ body {
 }
 
 .card-body {
-  padding: 0 15px;
+  padding: 35px 15px;
 }
 
 .divider {
@@ -50,10 +55,20 @@ body {
 }
 
 .dice {
-  width: 50px;
-  margin: 5px auto;
+  padding: 12px;
+  margin: 1px auto;
+}
+
+.dice-background {
   background-color: #52ffa8;
-  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  margin-left: -25px;
 }
 
 .attribution {
@@ -65,5 +80,11 @@ body {
 .attribution .copy-link {
   color: #52ffa8;
   text-decoration: none;
+}
+
+@media (min-width: 376px) {
+  .card {
+    max-width: 60vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
